@@ -28,7 +28,7 @@ pip3 install pyzbar -t $LAYER_FOLDER_TREE
 
 #get shared library (libzbar.so) needed for pyzbar to work properly within the Lambda function
 #compiling zbar to obtain libzbar.so
-sudo yum install -y autoconf autopoint gettext-devel automake pkgconfig libtool
+sudo yum install -y autoconf gettext-devel automake pkgconfig libtool
 git clone https://github.com/mchehab/zbar.git
 cd zbar/
 autoreconf -vfi
